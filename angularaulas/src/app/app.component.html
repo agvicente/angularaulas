@@ -4,6 +4,11 @@
 <p>Total de nomes : {{nomes.length}}</p>
 <p>Nome Principal : {{nomePrincipal.nome}}</p>
 
+<div *ngIf="nomes.length < 4">
+  <input type="text"/>
+  <button>Adicionar</button>
+</div>
+
 <ul>
   <li *ngFor="let item of nomes" style="color: red;">
     {{item.nome}} - {{item.idade}} anos -- {{item.getTipo()}}
