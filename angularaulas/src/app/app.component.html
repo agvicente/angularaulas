@@ -20,3 +20,6 @@
 <div *ngIf="showAviso">
   <p>{{avisoMsg}}</p>
 </div>
+
+<input type="text" value="{{nomePrincipal.nome}}"/><br/>
+<input type="text" [value]="nomePrincipal.nome" [disabled]="disableInput"/>
