@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Pessoa } from './pessoa';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,10 @@ export class AppComponent {
   title = 'angularaulas';
 
   nomes = [
-    {nome:'Augusto', idade:26},
-    {nome:'Paulo', idade:20},
-    {nome:'Fulano', idade:55}
+    new Pessoa(1, 'Augusto', 26),
+    new Pessoa(2, 'Jão', 33),
+    new Pessoa(3, 'Carina', 11)
+
   ];
 
   nomePrincipal = this.nomes[0];
