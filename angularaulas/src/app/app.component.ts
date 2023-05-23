@@ -20,4 +20,6 @@ export class AppComponent {
   showAviso = false;
   disableInput = true;
   avisoMsg = 'Este é um aviso';
+
+  imagem = 'https://www.google.com.br/google.jpg'
 }
