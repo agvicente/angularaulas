@@ -1,19 +1,38 @@
-<h1>{{title}}</h1> 
-<h4>Sub-legenda</h4>
+<html>
 
-<p>Total de nomes : {{nomes.length}}</p>
-<p>Nome Principal : {{nomePrincipal.nome}}</p>
+<head>
 
-<ul>
-  <li *ngFor="let item of nomes" style="color: red;">
-    {{item.nome}} - {{item.idade}} anos -- {{item.getTipo()}}
-  </li>
-</ul>
+</head>
 
-<div [style]="{width: '100px', height: '100px', fontSize: tamanhoFonte, backgroundColor: '#ff0000'}">
-  Texto qualquer
-</div>
+<body>
 
-<div [style.width.px]="1000">
-  Texto qualquer
-</div>
+  <h1>{{title}}</h1>
+  <h4>Sub-legenda</h4>
+
+  <p>Total de nomes : {{nomes.length}}</p>
+  <p>Nome Principal : {{nomePrincipal.nome}}</p>
+
+  <ul>
+    <li *ngFor="let item of nomes" style="color: red;">
+      {{item.nome}} - {{item.idade}} anos -- {{item.getTipo()}}
+    </li>
+  </ul>
+
+  <div [style]="{width: '100px', height: '100px', fontSize: tamanhoFonte, backgroundColor: '#ff0000'}">
+    Texto qualquer
+  </div>
+
+  <div [style.width.px]="1000">
+    Texto qualquer
+  </div>
+
+  <div [class]="{menu: true, hidden: true}">
+    Texto qualquer 1
+  </div>
+
+  <div [class]="{menu: true, hidden: false}">
+    Texto qualquer 2
+  </div>
+</body>
+
+</html>
