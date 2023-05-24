@@ -17,9 +17,5 @@ export class AppComponent {
 
   nomePrincipal = this.nomes[0];
 
-  showAviso = false;
-  disableInput = true;
-  avisoMsg = 'Este é um aviso';
-
-  imagem = 'https://www.google.com.br/google.jpg'
+  tamanhoFonte = '25px';
 }
