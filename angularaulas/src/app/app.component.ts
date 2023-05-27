@@ -12,9 +12,12 @@ export class AppComponent {
     new Pessoa(1, 'Augusto', 26),
     new Pessoa(2, 'Jão', 33),
     new Pessoa(3, 'Carina', 11)
-
   ];
 
   nomePrincipal = this.nomes[0];
-  corPrincipal = '#FF0000';
+  corPrincipal : string = '#FF0000';
+
+  trocarCor = (cor: string) =>{
+    this.corPrincipal = cor;
+  }
 }
