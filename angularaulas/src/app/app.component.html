@@ -9,8 +9,8 @@
   <h1>{{title}}</h1>
   
   <label for="tarefaInsert">Tarefa:</label>
-  <input id="tarefaInsert" type="text" #varr (keyup.enter)="adicionarTarefaComEnter(varr)" [value]="tarefaTela"/>
-  <button (click)="adicionarTarefaComBotao(tarefaTela)">Adicionar Tarefa</button><br/>
+  <input id="tarefaInsert" type="text" #varr (keyup.enter)="adicionarTarefa(varr)" />
+  <button type="submit" (click)="adicionarTarefa(varr)">Adicionar Tarefa</button><br/>
   <ul>
     <li *ngFor="let item of tarefas">
       {{item.tarefa}}
