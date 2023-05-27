@@ -13,34 +13,13 @@
   <p>Nome Principal : {{nomePrincipal.nome}}</p>
 
   <ul>
-    <li *ngFor="let item of nomes" style="color: red;">
+    <li *ngFor="let item of nomes" [style.color]="corPrincipal">
       {{item.nome}} - {{item.idade}} anos -- {{item.getTipo()}}
     </li>
   </ul>
 
-  <div [style]="{width: '100px', height: '100px', fontSize: tamanhoFonte, backgroundColor: '#ff0000'}">
-    Texto qualquer
-  </div>
+  <button (click)="corPrincipal='#00FF00'">Aperte Aqui</button>
 
-  <div [style.width.px]="1000">
-    Texto qualquer
-  </div>
-
-  <div [class]="{menu: true, hidden: true}">
-    Texto qualquer 1
-  </div>
-
-  <div [class]="{menu: true, hidden: false}">
-    Texto qualquer 2
-  </div>
-
-  <div [class.hidden]="true">
-    Texto qualquer 3
-  </div>
-
-  <div [class.hidden]="false">
-    Texto qualquer 4
-  </div>
 </body>
 
 </html>

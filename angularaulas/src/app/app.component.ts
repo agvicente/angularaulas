@@ -16,6 +16,5 @@ export class AppComponent {
   ];
 
   nomePrincipal = this.nomes[0];
-
-  tamanhoFonte = '25px';
+  corPrincipal = '#FF0000';
 }
