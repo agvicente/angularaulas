@@ -28,5 +28,6 @@ export class AppComponent {
   mudarNomePrincipal = (event: Event) => {
     const _event = event.target as HTMLInputElement;
     this.nomePrincipal = _event.value;
+    _event.value = '';
   }
 }
