@@ -13,7 +13,9 @@
   <p>Nome Principal : {{nomePrincipal.nome}}</p>
 
   <ul>
-    <li *ngFor="let item of nomes" [style.color]="corPrincipal">
+    <li *ngFor="let item of nomes" 
+        [style.color]="corPrincipal"
+        (click)="clicou(item)">
       {{item.nome}} - {{item.idade}} anos -- {{item.getTipo()}}
     </li>
   </ul>

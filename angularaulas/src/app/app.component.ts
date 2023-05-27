@@ -20,4 +20,8 @@ export class AppComponent {
   trocarCor = (cor: string) =>{
     this.corPrincipal = cor;
   }
+
+  clicou = (pessoa: Pessoa) => {
+    alert("Clicou em: "+pessoa.nome);
+  }
 }
