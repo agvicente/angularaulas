@@ -12,7 +12,7 @@
   <p>Total de nomes : {{nomes.length}}</p>
   <p>Nome Principal : {{nomePrincipal}}</p>
 
-  <input type="text" [value]="nomePrincipal" (input)="mudarNomePrincipal($event)"/>
+  <input type="text" [value]="nomePrincipal" (keyup)="mudarNomePrincipal($event)"/>
 
   <ul>
     <li *ngFor="let item of nomes" 
