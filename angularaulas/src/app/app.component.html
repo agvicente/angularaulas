@@ -7,27 +7,15 @@
 <body>
 
   <h1>{{title}}</h1>
-  <h4>Sub-legenda</h4>
-
-  <p>Total de nomes : {{nomes.length}}</p>
-  <p>Nome Principal : {{nomePrincipal}}</p>
-
-  <input type="text" [value]="nomePrincipal" (keyup.enter)="mudarNomePrincipal($event)"/><br/>
-  <input type="text" #nomeInput (keyup.enter)="mudarNomePrincipal($event)" />
-
-  <p>Variável: {{nomeInput.value}}</p>
-
+  
+  <label for="tarefaInsert">Tarefa:</label>
+  <input id="tarefaInsert" type="text" #varr (keyup.enter)="adicionarTarefaComEnter(varr)" [value]="tarefaTela"/>
+  <button (click)="adicionarTarefaComBotao(tarefaTela)">Adicionar Tarefa</button><br/>
   <ul>
-    <li *ngFor="let item of nomes" 
-        [style.color]="corPrincipal"
-        (click)="clicou(item)">
-      {{item.nome}} - {{item.idade}} anos -- {{item.getTipo()}}
+    <li *ngFor="let item of tarefas">
+      {{item.tarefa}}
     </li>
   </ul>
-
-  <button (click)="trocarCor('#0000FF')">Azul</button>
-  <button (click)="trocarCor('#FF0000')">Vermelho</button>
-  <button (click)="trocarCor('#00FF00')">Verde</button>
 
 </body>
 

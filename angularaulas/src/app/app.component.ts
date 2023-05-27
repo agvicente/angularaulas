@@ -1,33 +1,24 @@
 import { Component } from '@angular/core';
-import { Pessoa } from './pessoa';
+import { Tarefa } from './tarefa';
 
 @Component({
   selector: 'app-root',
   templateUrl:'./app.component.html'
 })
+
 export class AppComponent {
-  title = 'angularaulas';
+  title = 'Lista de Tarefas';
 
-  nomes = [
-    new Pessoa(1, 'Augusto', 26),
-    new Pessoa(2, 'Jão', 33),
-    new Pessoa(3, 'Carina', 11)
-  ];
+tarefas: Tarefa[] = [];
+tarefaTela: string = '';
 
-  nomePrincipal: string= 'Augusto';
-  corPrincipal: string = '#FF0000';
+adicionarTarefaComBotao = (tarefa: string) => {
+  if(tarefa == '') return;
+  this.tarefas.push(new Tarefa(tarefa));
+}
 
-  trocarCor = (cor: string) =>{
-    this.corPrincipal = cor;
-  }
-
-  clicou = (pessoa: Pessoa) => {
-    alert("Clicou em: "+pessoa.getTipo());
-  }
-
-  mudarNomePrincipal = (event: Event) => {
-    const _event = event.target as HTMLInputElement;
-    this.nomePrincipal = _event.value;
-    _event.value = '';
-  }
+adicionarTarefaComEnter = (element: HTMLInputElement) => {
+  if(element.value == '') return;
+  this.tarefas.push(new Tarefa(element.value));
+}
 }
