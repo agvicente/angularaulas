@@ -1,21 +1,66 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-
+  <meta charset="UTF-8">
+  <title>Trabalho Arquitetura de Front-Ends</title>
 </head>
 
 <body>
+  <header>
+      <div class="menu">
+        <ul>
+          <li>Blog</li>
+          <li>Sobre</li>
+          <li>Descrição</li>
+        </ul>
+      </div>
+      <div class="sobre">
+        <div class="foto">
+          <img class="eu" src="assets/imagens/foto.jpeg"/>
+        </div>
+        <div class="biografia">
+          <h1>Meu Nome</h1>
+          <p>
+            Coloque aqui sua biografia Coloque aqui sua biografia Coloque aqui sua biografia 
+            Coloque aqui sua biografia Coloque aqui sua biografia Coloque aqui sua biografia 
+            Coloque aqui sua biografia Coloque aqui sua biografia Coloque aqui sua biografia 
+            Coloque aqui sua biografia Coloque aqui sua biografia Coloque aqui sua biografia 
+            Coloque aqui sua biografia Coloque aqui sua biografia Coloque aqui sua biografia 
+          </p>
+        </div>
+      </div>
+  </header>
 
-  <h1>{{title}}</h1>
-  
-  <label for="tarefaInsert">Tarefa:</label>
-  <input id="tarefaInsert" type="text" #varr (keyup.enter)="adicionarTarefa(varr)" />
-  <button type="submit" (click)="adicionarTarefa(varr)">Adicionar Tarefa</button><br/>
-  <ul>
-    <li *ngFor="let item of tarefas">
-      {{item.tarefa}}
-    </li>
-  </ul>
+  <main>
+    <div class="ultimasDoBlog">
+      <h1>Últimas do Blog</h1>
+      <ul>
+        <li>
+          <div>
+            <h2>5 dicas para a sua carreira profissional</h2>
+            <p>Confira algumas dicas que podem ajudar a alavancar sua carreira como desenvolvedor</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h2>5 dicas para a sua carreira profissional</h2>
+            <p>Confira algumas dicas que podem ajudar a alavancar sua carreira como desenvolvedor</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h2>5 dicas para a sua carreira profissional</h2>
+            <p>Confira algumas dicas que podem ajudar a alavancar sua carreira como desenvolvedor</p>
+          </div>
+        </li>
+      </ul>
+      <a href="#" >Ver Tudo</a>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
 
 </body>
 

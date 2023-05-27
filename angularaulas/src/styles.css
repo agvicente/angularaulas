@@ -1,4 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+header {
+    height: fit-content;
+    background-color: red;
+}
+
+.menu {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    background: blue;
+    align-items: center;
+}
+
+.sobre {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+}
+
+.foto {
+    width: 1000px;
+}
+
+.eu {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.biografia {
+    margin: auto;
+}
+
+.corpo {
+
+}
+
+
+
 .hidden {
     display: none;
 }
