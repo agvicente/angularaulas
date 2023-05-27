@@ -14,14 +14,19 @@ export class AppComponent {
     new Pessoa(3, 'Carina', 11)
   ];
 
-  nomePrincipal = this.nomes[0];
-  corPrincipal : string = '#FF0000';
+  nomePrincipal: string= 'Augusto';
+  corPrincipal: string = '#FF0000';
 
   trocarCor = (cor: string) =>{
     this.corPrincipal = cor;
   }
 
   clicou = (pessoa: Pessoa) => {
-    alert("Clicou em: "+pessoa.nome);
+    alert("Clicou em: "+pessoa.getTipo());
+  }
+
+  mudarNomePrincipal = (event: Event) => {
+    const _event = event.target as HTMLInputElement;
+    this.nomePrincipal = _event.value;
   }
 }

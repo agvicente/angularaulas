@@ -10,7 +10,9 @@
   <h4>Sub-legenda</h4>
 
   <p>Total de nomes : {{nomes.length}}</p>
-  <p>Nome Principal : {{nomePrincipal.nome}}</p>
+  <p>Nome Principal : {{nomePrincipal}}</p>
+
+  <input type="text" [value]="nomePrincipal" (input)="mudarNomePrincipal($event)"/>
 
   <ul>
     <li *ngFor="let item of nomes" 
