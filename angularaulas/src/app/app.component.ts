@@ -11,7 +11,7 @@ export class AppComponent {
 
 proprietario: Proprietario = new Proprietario(
   'Augusto Custódio Vicente',
-  'Sou nascido e criado em Belo Horizonte, formado Engenharia Eletronica e de Telecomunicação pela Pontifícia Unicersidade Católica de minas Gerais. Atualmente faço pós graduação em Arquitetura de Software Distribuido na mesma instituição. A médio prazo pretendo me tornar lider técnico em uma empresa ou startup, e a longo prazo penso em empreender na área de tecnologia, agregando todo o conhecimento que tive nas formações. Durante o percurso pretendo também fazer um mestrado em Engenharia na Universidade Federal de Minas Gerais.'
+  'Sou nascido e criado em Belo Horizonte, tenho 26 anos e sou formado Engenharia Eletronica e de Telecomunicação pela Pontifícia Unicersidade Católica de minas Gerais. Atualmente faço pós graduação em Arquitetura de Software Distribuido na mesma instituição. A médio prazo pretendo me tornar lider técnico em uma empresa ou startup.'
 );
 
 itensBlog: ItemBlog[] = [

@@ -49,7 +49,7 @@ header {
 
 .sobre {
     margin: auto;
-    max-width: 900px;
+    max-width: 850px;
     display: flex;
     background-color: none;
 }
@@ -57,7 +57,7 @@ header {
 .foto {
     align-items: center;
     margin: auto;
-    padding: 25px;
+    background-color: none;
 }
 
 .eu {
@@ -67,7 +67,7 @@ header {
 }
 
 .biografia {
-    max-width: 700px;
+    max-width: 600px;
     height:fit-content ;
     background-color: none;
     color: #FFF;
@@ -100,16 +100,18 @@ header {
 
 .ultimasDoBlog .itemBlog,
 .ultimasDoBlog h1{
-   padding: 12px;
+   padding: 5px;
 }
 
 .ultimasDoBlog h1{
-    font-size: 28px;
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 26px;
  }
 
 .ultimasDoBlog .itemBlog:hover {
    background-color: azure;
-   border-radius: 15px;
+   border-radius: 5px;
 }
 
 .ultimasDoBlog .verTudo{
@@ -129,7 +131,7 @@ header {
     color: #000;
     text-transform: none;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
  }
  .ultimasDoBlog h2 a:hover{
     color: blue;
