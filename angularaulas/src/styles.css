@@ -122,6 +122,7 @@ header {
 .ultimasDoBlog p{
     padding-top: 10px;
     font-size: 12px;
+    font-style: italic;
     line-height: 20px;
 }
 .ultimasDoBlog h2 a{

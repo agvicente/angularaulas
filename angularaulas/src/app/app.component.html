@@ -22,9 +22,9 @@
           <img class="eu" src="assets/imagens/foto.jpeg"/>
         </div>
         <div class="biografia">
-          <h1>{{nome}}</h1>
+          <h1>{{proprietario.nome}}</h1>
           <p>
-            {{biografia}}
+            {{proprietario.biografia}}
           </p>
         </div>
       </div>
@@ -33,23 +33,11 @@
   <main>
     <div class="ultimasDoBlog">
       <h1>Últimas do Blog</h1>
-      <ul>
+      <ul *ngFor="let item of itensBlog">
         <li>
           <div class="itemBlog">
-            <h2><a href="#">5 dicas para a sua carreira profissional</a></h2>
-            <p>Confira algumas dicas que podem ajudar a alavancar sua carreira como desenvolvedor</p>
-          </div>
-        </li>
-        <li>
-          <div class="itemBlog">
-            <h2><a href="#">5 dicas para a sua carreira profissional</a></h2>
-            <p>Confira algumas dicas que podem ajudar a alavancar sua carreira como desenvolvedor</p>
-          </div>
-        </li>
-        <li>
-          <div class="itemBlog">
-            <h2><a href="#">5 dicas para a sua carreira profissional</a></h2>
-            <p>Confira algumas dicas que podem ajudar a alavancar sua carreira como desenvolvedor</p>
+            <h2><a href="#">{{item.titulo}}</a></h2>
+            <p>{{item.descricao}}</p>
           </div>
         </li>
       </ul>
